@@ -31,5 +31,6 @@ jobs:
     - name: Send greeting
       run: |
            echo "Hello ${{ inputs.name }}"
+           pwd
            python main.py
            echo "end"
