@@ -31,6 +31,13 @@ jobs:
     - name: Send greeting
       run: |
            echo "Hello ${{ inputs.name }}"
-           pwd
-           python main.py
-           echo "end"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: check out
+      uses: actions/checkout@v2
+      with:
+        path: .
+    - name: run
+      run: python main.py
+  
