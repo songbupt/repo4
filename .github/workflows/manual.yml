@@ -31,5 +31,5 @@ jobs:
     - name: Send greeting
       run: |
            echo "Hello ${{ inputs.name }}"
-           main.py
+           python main.py
            echo "end"
